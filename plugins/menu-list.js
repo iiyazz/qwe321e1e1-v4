@@ -12,7 +12,7 @@ const defaultMenu = {
   before: `
 ╭─────═[ INFO USER ]═─────⋆
 │╭───────────────···
-┴│☂︎ *Name:* %name
+┴│☂︎ *${ucapan()} %name!*
 ${emot}│☂︎ *Tag:* %tag
 ${emot}│☂︎ *Premium:* %prems
 ${emot}│☂︎ *Limit:* %limit
@@ -22,23 +22,11 @@ ${emot}│☂︎ *Level:* %level [ %xp4levelup Xp For Levelup]
 ${emot}│☂︎ *Xp:* %exp / %maxexp
 ┬│☂︎ *Total Xp:* %totalexp
 │╰────────────────···
-┠─────═[ TODAY ]═─────⋆
-│╭────────────────···
-┴│    *${ucapan()} %name!*
-${emot}│☂︎ *Tanggal:* %week %weton
-${emot}│☂︎ *Date:* %date
-${emot}│☂︎ *Tanggal Islam:* %dateIslamic
-┬│☂︎ *Waktu:* %time
-│╰────────────────···
 ┠─────═[ INFO BOT ]═─────⋆
 │╭────────────────···
 ┴│☂︎ *Nama Bot:* %me
 ${emot}│☂︎ *Mode:* %mode
 ${emot}│☂︎ *Prefix:* [ *%_p* ]
-${emot}│☂︎ *Baileys:* Multi Device
-${emot}│☂︎ *Battery:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-${emot}│☂︎ *Platform:* %platform
-${emot}│☂︎ *Type:* Node.Js
 ${emot}│☂︎ *Uptime:* %muptime
 ┬│☂︎ *Database:* %rtotalreg dari %totalreg
 │╰────────────────···
@@ -277,7 +265,6 @@ const sections = [
         {title: `⚡ ${pmenus} SPEED BOT`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
         {title: `💌 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
         {title: `⏰ ${pmenus} RUNTIME BOT`, rowId: ".runtime", description: "𝙼𝚎𝚗𝚊𝚖𝚙𝚒𝚕𝚔𝚊𝚗 Waktu Bot Berjalan"}, 
-        {title: `📔 ${pmenus} SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
     ]
       },{
         title: `${htki} SUPPORT ${htka}`,
@@ -360,7 +347,6 @@ let tek = `✧────···[ Dashboard ]···────✧
 │
 ├━━━━━━━━━━━━━━━━┈─⋆
 │
-│ ▸ *Sumber :* YouTube WH-MODS-DEV
 │ ▸ *ᴀᴜᴛʜᴏʀ :* ${nameown}
 ┴ ▸ *ᴏᴡɴᴇʀ :* ${nameown}
 ✧
@@ -631,7 +617,7 @@ const listMessage = {
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://github.com/WH-MODS-BOT/'
+                        url: 'https://wa.me/6282288082120'
                     }
                 },
                 {
@@ -694,7 +680,7 @@ if (pilih == "ke6") {
 }
 if (pilih == "ke7") {
     conn.send3ButtonVid(m.chat, 'https://telegra.ph/file/ad296dd3ec7cd13a9893d.mp4', '┅────┅─❏ *MENU 7* ❏─┅────┅', text.trim() + `\nᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ ${nameown}\n` + botdate, 'Menu', '.menu', 'Owner', '.owner', 'Credit', '.credit', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://www.instagram.com/mrlnnaaarf/',
+    mediaUrl: 'https://www.instagram.com/andri.yoo',
     mediaType: 2, 
     description: sgc,
     title: "Follow Lah Cᴜʏ!!!",
@@ -706,7 +692,7 @@ if (pilih == "ke7") {
 }
 if (pilih == "ke8") {
 conn.sendButtonImg(m.chat, imgr + 'Menu 8', '┅────┅─❏ *MENU 8* ❏─┅────┅', text.trim() + botdate + '\n\n' + wm, em.getRandom() + ' Donasi', '.donasi', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
-  mediaUrl: 'https://www.instagram.com/mrlnnaaarf/',
+  mediaUrl: 'https://www.instagram.com/andri.yoo',
   mediaType: 2, 
   description: sgc,
   title: "Jᴏɪɴ Sɪɴɪ Cᴜʏ",
